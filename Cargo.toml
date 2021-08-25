@@ -6,3 +6,27 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# tokio and futures
+futures = "0.3"
+tokio = { version = "1", features = ["full"] }
+
+# serde
+serde_json = "1.0.59"
+serde_derive = "1.0.129"
+
+# hyper
+hyper = { version = "0.14", features = ["full"] }
+
+# reqwest
+reqwest = { version = "0.11.4", features = ["blocking","json"] }
+
+# mullvad/jsonrpc-client-rs
+jsonrpc-client-core = "0.5.0"
+jsonrpc-client-http = "0.5.0"
+
+# paritytech/jsonrpc
+jsonrpc-http-server = "18.0.0"
+jsonrpc-core = "18.0.0"
+jsonrpc-core-client = "18.0.0"
+jsonrpc-client-transports = "18.0.0"
+jsonrpc-derive = "18.0.0"
