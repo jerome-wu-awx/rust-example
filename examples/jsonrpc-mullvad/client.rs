@@ -6,7 +6,7 @@ use jsonrpc_client_http::HttpTransport;
 use serde_json::Value;
 
 jsonrpc_client!(pub struct AccountServiceClient {
-    pub fn findById(&mut self, account_id: &str) -> RpcResult<Value>;
+    pub fn findById(&mut self, account_id: &str) -> RpcRequest<Value>;
 });
 
 
